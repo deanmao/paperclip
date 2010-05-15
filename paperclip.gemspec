@@ -1,6 +1,3 @@
-$LOAD_PATH << File.join(File.dirname(__FILE__), 'lib')
-require 'paperclip'
-
 include_files = ["README*", "LICENSE", "Rakefile", "init.rb", "{generators,lib,tasks,test,shoulda_macros}/**/*"].map do |glob|
   Dir[glob]
 end.flatten
@@ -10,7 +7,7 @@ end.flatten
 
 spec = Gem::Specification.new do |s| 
   s.name              = "paperclip"
-  s.version           = Paperclip::VERSION
+  s.version           = "2.3.2"
   s.author            = "Jon Yurek"
   s.email             = "jyurek@thoughtbot.com"
   s.homepage          = "http://www.thoughtbot.com/projects/paperclip"
